@@ -1,30 +1,28 @@
-void setup() {
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(13, OUTPUT);
-}
-
 int a = 6;
-void loop() {
+void setup() {
   while (a != 13)
   {
-    digitalWrite(a, HIGH);
-    delay(100);
-    digitalWrite(a, LOW);
-    delay(100);
+    pinMode(a, OUTPUT);
     a++;
   }
-  while (a != 6)
+}
+
+int number = 6;
+void loop() {
+  while (number != 13)
   {
-    digitalWrite(a, HIGH);
+    digitalWrite(number, HIGH);
     delay(100);
-    digitalWrite(a, LOW);
+    digitalWrite(number, LOW);
     delay(100);
-    a--;
+    number++;
+  }
+  while (number != 6)
+  {
+    digitalWrite(number, HIGH);
+    delay(100);
+    digitalWrite(number, LOW);
+    delay(100);
+    number--;
   }
 }
