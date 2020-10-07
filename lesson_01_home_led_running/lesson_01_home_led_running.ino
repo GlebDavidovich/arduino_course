@@ -14,17 +14,17 @@ void loop() {
   while (a != 13)
   {
     digitalWrite(a, HIGH);
-    delay(10);
+    delay(100);
     digitalWrite(a, LOW);
-    delay(10);
+    delay(100);
     a++;
   }
   while (a != 6)
   {
     digitalWrite(a, HIGH);
-    delay(10);
+    delay(100);
     digitalWrite(a, LOW);
-    delay(10);
+    delay(100);
     a--;
   }
 }
